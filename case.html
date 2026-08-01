@@ -1,0 +1,199 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Case study — rebuilding the Whitepace SaaS landing page from a Figma community template into hand-coded HTML, CSS and GSAP." />
+<title>Case Study — Whitepace · Figma → Website</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/case.css" />
+
+<body class="case-body">
+<a class="skip-link" href="#embed">Skip to live rebuild</a>
+
+<!-- ---- Top bar ---- -->
+<div class="case-bar">
+  <div class="container nav">
+    <a class="case-back" href="#">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      Back to work
+    </a>
+    <a href="index.html" class="btn btn-blue" target="_blank" rel="noopener">
+      View live site
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+    </a>
+  </div>
+</div>
+
+<main>
+  <!-- ---- Hero ---- -->
+  <header class="case-hero">
+    <div class="container">
+      <p class="case-tag" data-reveal>Case Study — Figma → Website</p>
+      <h1 class="case-title" data-reveal>Whitepace</h1>
+      <p class="case-sub" data-reveal>A pixel-faithful rebuild of the popular “Whitepace” SaaS landing template — translating a static Figma community file into a responsive, accessible, animated website built entirely by hand.</p>
+
+      <dl class="meta-row" data-reveal>
+        <div><dt>Project type</dt><dd>SaaS landing page</dd></div>
+        <div><dt>Role</dt><dd>Design → Front-end</dd></div>
+        <div><dt>Stack</dt><dd>HTML · CSS · GSAP</dd></div>
+        <div><dt>Year</dt><dd>2026</dd></div>
+      </dl>
+    </div>
+  </header>
+
+  <!-- ---- Design system ---- -->
+  <section class="case-sec">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <h2>The design system, extracted</h2>
+        <p class="lead">Before writing a line of markup, I lifted the core tokens from the Figma file — colour, type and radius — and rebuilt them as CSS custom properties so the whole site stays consistent.</p>
+      </div>
+
+      <div class="swatches" data-stagger>
+        <div class="swatch"><div class="chip" style="background:#043873"></div><div class="info"><strong>Navy</strong><code>#043873</code></div></div>
+        <div class="swatch"><div class="chip" style="background:#4f9cf9"></div><div class="info"><strong>Blue</strong><code>#4F9CF9</code></div></div>
+        <div class="swatch"><div class="chip" style="background:#ffe492"></div><div class="info"><strong>Yellow</strong><code>#FFE492</code></div></div>
+        <div class="swatch"><div class="chip" style="background:#212529"></div><div class="info"><strong>Ink</strong><code>#212529</code></div></div>
+      </div>
+
+      <div class="type-scale" data-stagger>
+        <div class="type-row"><span class="tag">Display / 800</span><span class="demo" style="font-size:2.6rem">Get More Done</span></div>
+        <div class="type-row"><span class="tag">Heading / 800</span><span class="demo" style="font-size:1.7rem">Choose Your Plan</span></div>
+        <div class="type-row"><span class="tag">Body / 400</span><span class="demo" style="font-size:1.05rem;font-weight:400;color:var(--muted)">Project management software for modern teams.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---- Live rebuild embed ---- -->
+  <section class="case-sec" id="embed">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <h2>The rebuild, running live</h2>
+        <p class="lead">Not a screenshot — the actual coded site, embedded below. Toggle the viewport to see the responsive layout adapt in real time.</p>
+      </div>
+
+      <div class="embed-toolbar" data-reveal>
+        <div class="seg" role="group" aria-label="Preview viewport">
+          <button type="button" class="active" data-view="desktop" aria-pressed="true">Desktop</button>
+          <button type="button" data-view="mobile" aria-pressed="false">Mobile</button>
+        </div>
+        <span class="dot" aria-hidden="true"></span>
+        <span class="status">localhost — live build</span>
+      </div>
+
+      <div class="embed-stage" data-reveal>
+        <iframe id="embedFrame" class="embed-frame" src="index.html" title="Live Whitepace rebuild" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---- Fidelity ---- -->
+  <section class="case-sec">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <h2>Section-by-section fidelity</h2>
+        <p class="lead">Every block from the original template, rebuilt and accounted for.</p>
+      </div>
+      <ul class="fidelity" data-stagger>
+        <li><span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>Sticky navigation</strong><small>Scroll-aware shadow + mobile hamburger</small></span></li>
+        <li><span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>Hero</strong><small>Yellow accent headline + SVG board mockup</small></span></li>
+        <li><span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>Feature rows</strong><small>Alternating layout, custom illustrations</small></span></li>
+        <li><span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>“Everywhere” band</strong><small>Dark card + App Store / Play badges</small></span></li>
+        <li><span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>Pricing</strong><small>Free / Enterprise + animated monthly↔yearly</small></span></li>
+        <li><span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>Testimonials</strong><small>GSAP fade carousel with prev / next</small></span></li>
+        <li><span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>Blog grid</strong><small>Three responsive article cards</small></span></li>
+        <li><span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>CTA + footer</strong><small>Glow CTA + newsletter with validation</small></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ---- Build decisions ---- -->
+  <section class="case-sec">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <h2>Build decisions</h2>
+        <p class="lead">Where I went beyond a straight copy to make the rebuild sharper and more robust than the source.</p>
+      </div>
+      <div class="decisions" data-stagger>
+        <article class="decision">
+          <span class="num">01</span>
+          <h3>Vector, not raster</h3>
+          <p>The template's UI mockups were flat images. I redrew them as inline SVG — crisp at any resolution, themable, and a fraction of the weight.</p>
+        </article>
+        <article class="decision">
+          <span class="num">02</span>
+          <h3>Interactive pricing</h3>
+          <p>The static monthly/yearly toggle became a real control that animates the price with an eased count-up, driven by data attributes.</p>
+        </article>
+        <article class="decision">
+          <span class="num">03</span>
+          <h3>Accessibility first</h3>
+          <p>Skip link, visible focus rings, real WCAG-contrast pairings, ARIA-labelled illustrations, and a full <code>prefers-reduced-motion</code> fallback.</p>
+        </article>
+        <article class="decision">
+          <span class="num">04</span>
+          <h3>Motion with restraint</h3>
+          <p>GSAP + ScrollTrigger reveal content on entry and power the testimonial carousel — subtle enough to feel premium, never distracting.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---- Bottom CTA ---- -->
+  <section class="case-cta">
+    <div class="container" data-reveal>
+      <h2>See it for yourself</h2>
+      <a href="index.html" class="btn btn-yellow btn-lg" target="_blank" rel="noopener">
+        Open the live rebuild
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom" style="margin-top:0;border-top:0">
+      <span>© 2026 · Portfolio case study</span>
+      <span class="rebuild-note">Figma template “Whitepace” → hand-coded (HTML · CSS · GSAP)</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function () {
+  "use strict";
+  const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Viewport toggle for the embedded build
+  const frame = document.getElementById("embedFrame");
+  document.querySelectorAll(".seg button").forEach((b) =>
+    b.addEventListener("click", () => {
+      document.querySelectorAll(".seg button").forEach((x) => {
+        const on = x === b;
+        x.classList.toggle("active", on);
+        x.setAttribute("aria-pressed", String(on));
+      });
+      frame.classList.toggle("mobile", b.dataset.view === "mobile");
+    })
+  );
+
+  // Reveal animations
+  if (window.gsap && window.ScrollTrigger && !prefersReduced) {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".case-hero [data-reveal]", { opacity: 1, y: 0, duration: 0.8, ease: "power3.out", stagger: 0.1, delay: 0.05 });
+    gsap.utils.toArray("[data-reveal]").forEach((el) => {
+      if (el.closest(".case-hero")) return;
+      gsap.to(el, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out", scrollTrigger: { trigger: el, start: "top 88%" } });
+    });
+    gsap.utils.toArray("[data-stagger]").forEach((g) => {
+      gsap.to(g.children, { opacity: 1, y: 0, duration: 0.7, ease: "power3.out", stagger: 0.1, scrollTrigger: { trigger: g, start: "top 85%" } });
+    });
+  } else {
+    document.querySelectorAll("[data-reveal], [data-stagger] > *").forEach((el) => { el.style.opacity = 1; el.style.transform = "none"; });
+  }
+})();
+</script>
